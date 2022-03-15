@@ -10,7 +10,7 @@
     "test": "npx hardhat test ./test/index.test.js",
     "test:unit": "npx hardhat test ./test/unit/index.test.js",
     "test:integrate": "npx hardhat test ./test/integrate/index.test.js",
-    "test:rpc": "npx hardhat node",
+    "rpc": "npx hardhat node",
     "deploy:localhost": "npx hardhat run scripts/deploy.js --network localhost",
     "deploy:ganache": "npx hardhat run scripts/deploy.js --network ganache",
     "deploy:ropsten": "npx hardhat run scripts/deploy.js --network ropsten",
