@@ -1,5 +1,7 @@
 # hardhat-template
 
+Hardhat-Template is a template of hardhat structure. Used for quick creation Solidity project.
+
 Set up project:
 
 ```bash
