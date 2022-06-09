@@ -34,23 +34,19 @@ module.exports = {
     },
     ganache: {
       url: "http://127.0.0.1:8545",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      accounts: [process.env.PRIVATE_KEY],
     },
     ropsten: {
-      url: process.env.ROPSTEN_URL !== undefined ? process.env.ROPSTEN_URL : "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      url: process.env.ROPSTEN_URL || "",
+      accounts: [process.env.PRIVATE_KEY] || [],
     },
     rinkeby: {
-      url: process.env.RINKEBY_URL !== undefined ? process.env.RINKEBY_URL : "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      url: process.env.RINKEBY_URL || "",
+      accounts: [process.env.PRIVATE_KEY] || [],
     },
     mainnet: {
-      url: process.env.MAINNET_URL !== undefined ? process.env.MAINNET_URL : "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      url: process.env.MAINNET_URL || "",
+      accounts: [process.env.PRIVATE_KEY] || [],
     },
   },
   gasReporter: {
@@ -60,10 +56,7 @@ module.exports = {
     // coinmarketcap: process.env.COINMARKET_API_KEY,
   },
   etherscan: {
-    apiKey:
-      process.env.ETHERSCAN_API_KEY !== undefined
-        ? process.env.ETHERSCAN_API_KEY
-        : "",
+    apiKey: process.env.ETHERSCAN_API_KEY || "",
   },
   mocha: {
     timeout: 200000,
